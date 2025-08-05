@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import MapleStory from '../views/MapleStory.vue'
 import ProjectSekai from '../views/ProjectSekai.vue'
@@ -16,7 +16,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory('/GameExperience/'),
   routes,
   scrollBehavior(to) {
     if (to.hash) {
